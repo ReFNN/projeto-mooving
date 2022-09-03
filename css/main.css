@@ -16,6 +16,12 @@ main {
     position: relative;
 }
 
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
 .logo {
     float: left;
     padding: 13px;
@@ -33,3 +39,95 @@ main {
     width: 30%;
     float: right;
 }
+
+.header-2 {
+    background-color: orange;
+    width: 100%;
+    border-bottom: 3px solid rgb(202, 131, 0);
+    margin: 0 auto;
+    height: 50px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu {
+    width: 70%;
+    float: left;
+}
+
+/* search button */
+
+* {
+    box-sizing: border-box;
+}
+
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    float: right;
+}
+
+.input-search {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #1F3957;
+    padding-right: 40px;
+    color: #fff;
+}
+
+.input-search::placeholder {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color: #ffffff;
+    background-color: transparent;
+    pointer-events: painted;
+}
+
+.btn-search:focus~.input-search {
+    width: 300px;
+    border-radius: 0px;
+    background-color: #1F3957;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+    width: 300px;
+    border-radius: 50px;
+    background-color: #1F3957;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+/* search button */
