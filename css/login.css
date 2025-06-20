@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #000000, #1c1c1c); /* Black gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff; /* Default text color to white for readability */
+}
+
+.login-container {
+    background-color: #333; /* Dark grey container background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Pink shadow */
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #ff69b4; /* Pink for the heading */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffc0cb; /* Lighter pink for labels */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff69b4; /* Pink border */
+    border-radius: 5px;
+    background-color: #444; /* Darker input background */
+    color: #fff; /* White text in input */
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff1493; /* Deeper pink on focus */
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4; /* Pink button */
+    color: #000; /* Black text on button */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff1493; /* Deeper pink on hover */
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.8);
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    color: #ffc0cb; /* Lighter pink for links */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ff69b4; /* Pink on hover */
+    text-decoration: underline;
+}
